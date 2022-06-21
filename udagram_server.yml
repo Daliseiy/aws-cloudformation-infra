@@ -52,9 +52,8 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service    
           cd /var/www/html
-          echo "Obakunle Oluseye Project 2" > index.html
+          echo "It works! Udagram, Udacity by Obakunle Oluseye Project 2" > index.html
       ImageId: ami-0729e439b6769d6ab
-      KeyName: jumpboxkey
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
